@@ -1,0 +1,84 @@
+.container {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-shadow {
+    height: 98%;
+    width: 99%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0 2em 0 black;
+
+    background: rgb(238, 232, 232);
+}
+
+.app {
+    width: 15%;
+
+    margin: 3em;
+
+    transition: filter .5s;
+}
+
+.app a {
+    width: 100%;
+}
+
+.app a img {
+    width: 100%;
+
+    transition: filter .5s;
+}
+
+.netflix img:hover {
+    filter: drop-shadow(0 0 30px #000000);
+}
+.deezer img:hover {
+    filter: drop-shadow(0 0 30px #A237FF);
+}
+.youtube img:hover {
+    filter: drop-shadow(0 0 30px #FF0000);
+}
+.cuevana img:hover {
+    filter: drop-shadow(0 0 30px #007AFF);
+}
+
+.not-connected-alert {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.not-connected-alert.show {
+    opacity: 1;
+    
+    transition: opacity 1s;
+
+    display: flex;
+}
+.not-connected-alert.hide {
+    opacity: 0;
+    
+    transition: opacity 1s;
+
+    display: none;
+}
+
+.not-connected-alert img {
+    width: 20%;
+}
